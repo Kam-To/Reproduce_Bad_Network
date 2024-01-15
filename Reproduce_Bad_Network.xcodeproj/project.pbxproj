@@ -14,9 +14,11 @@
 		4282B3AD2B550A7A00ED785E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4282B3AC2B550A7A00ED785E /* Assets.xcassets */; };
 		4282B3B02B550A7A00ED785E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4282B3AE2B550A7A00ED785E /* LaunchScreen.storyboard */; };
 		4282B3B32B550A7A00ED785E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4282B3B22B550A7A00ED785E /* main.m */; };
+		EF5B9CB18A14B9D7F84B1638 /* Pods_Reproduce_Bad_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C96B4130DE4C3C941A9266 /* Pods_Reproduce_Bad_Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012B0A12045FD7A324040F7F /* Pods-Reproduce_Bad_Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reproduce_Bad_Network.debug.xcconfig"; path = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network.debug.xcconfig"; sourceTree = "<group>"; };
 		4282B39D2B550A7900ED785E /* Reproduce_Bad_Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reproduce_Bad_Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4282B3A02B550A7900ED785E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4282B3A12B550A7900ED785E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		4282B3AF2B550A7A00ED785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4282B3B12B550A7A00ED785E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4282B3B22B550A7A00ED785E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68C96B4130DE4C3C941A9266 /* Pods_Reproduce_Bad_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reproduce_Bad_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F06307AFE089A8DE67E6ED /* Pods-Reproduce_Bad_Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reproduce_Bad_Network.release.xcconfig"; path = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5B9CB18A14B9D7F84B1638 /* Pods_Reproduce_Bad_Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				4282B39F2B550A7900ED785E /* Reproduce_Bad_Network */,
 				4282B39E2B550A7900ED785E /* Products */,
+				737ABFEDEF25D18266035FD3 /* Pods */,
+				705BFF57B05363206792A3F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = Reproduce_Bad_Network;
 			sourceTree = "<group>";
 		};
+		705BFF57B05363206792A3F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C96B4130DE4C3C941A9266 /* Pods_Reproduce_Bad_Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		737ABFEDEF25D18266035FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				012B0A12045FD7A324040F7F /* Pods-Reproduce_Bad_Network.debug.xcconfig */,
+				B1F06307AFE089A8DE67E6ED /* Pods-Reproduce_Bad_Network.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4282B3B62B550A7A00ED785E /* Build configuration list for PBXNativeTarget "Reproduce_Bad_Network" */;
 			buildPhases = (
+				61E6DC6E1D80D8C1F5D74F26 /* [CP] Check Pods Manifest.lock */,
 				4282B3992B550A7900ED785E /* Sources */,
 				4282B39A2B550A7900ED785E /* Frameworks */,
 				4282B39B2B550A7900ED785E /* Resources */,
+				2E44766BFC38BB476C8187E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E44766BFC38BB476C8187E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61E6DC6E1D80D8C1F5D74F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reproduce_Bad_Network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4282B3992B550A7900ED785E /* Sources */ = {
@@ -212,7 +280,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -273,7 +341,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -293,11 +361,13 @@
 		};
 		4282B3B72B550A7A00ED785E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012B0A12045FD7A324040F7F /* Pods-Reproduce_Bad_Network.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LN88D66S3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reproduce_Bad_Network/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,12 +375,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kam.Reproduce-Bad-Network";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,11 +390,13 @@
 		};
 		4282B3B82B550A7A00ED785E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F06307AFE089A8DE67E6ED /* Pods-Reproduce_Bad_Network.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LN88D66S3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reproduce_Bad_Network/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,12 +404,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kam.Reproduce-Bad-Network";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,6 @@
+framework module Pods_Reproduce_Bad_Network {
+  umbrella header "Pods-Reproduce_Bad_Network-umbrella.h"
+
+  export *
+  module * { export * }
+}

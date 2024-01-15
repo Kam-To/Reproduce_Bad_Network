@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKP-px-qyf">
+                                <rect key="frame" x="87" y="421" width="219" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start With NSURLSession"/>
+                                <connections>
+                                    <action selector="startWithUrlSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtC-vv-QDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIv-97-wVy">
+                                <rect key="frame" x="77.666666666666686" y="485" width="238" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start With Other Framework"/>
+                                <connections>
+                                    <action selector="startWithOther:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhL-U5-LEM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L86-xP-qbx">
+                                <rect key="frame" x="59" y="150.33333333333337" width="275.33333333333331" height="243.66666666666663"/>
+                                <string key="text">Plz enable Network Link Conditioner with custom profile:
+ In Bandwidth: 0
+In Packet Loss: 5 In Delay: 100
+Out Bandwidth: 0 Out Packet Loss: 5 Out Delay: 100 DNS Delay 0
+Protocol: Any
+Interface: All</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CIv-97-wVy" firstAttribute="top" secondItem="XKP-px-qyf" secondAttribute="bottom" constant="29" id="0AK-OU-tnX"/>
+                            <constraint firstItem="L86-xP-qbx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P1z-Dz-ztg"/>
+                            <constraint firstItem="CIv-97-wVy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P3f-cf-LOZ"/>
+                            <constraint firstItem="XKP-px-qyf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WaX-nD-PI2"/>
+                            <constraint firstItem="XKP-px-qyf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="u4a-dD-xrY"/>
+                            <constraint firstItem="XKP-px-qyf" firstAttribute="top" secondItem="L86-xP-qbx" secondAttribute="bottom" constant="27" id="xq0-cs-hYT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="-6.3380281690140849"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

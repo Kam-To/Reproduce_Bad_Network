@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D7EF8CEB275B9569C5D76A7F503F19 /* YMURLSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 022B9E1AF63F4294476574B992C25097 /* YMURLSessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0925503D71D84EE2ADCAD627070D803C /* YMEasyHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA100BAFB31187F96D93A07CE6EB7C4 /* YMEasyHandle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		151C62105E96DD5B0D786D9758DF76DE /* NSInputStream+YMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C74EE30C792B9611E05368406DE821 /* NSInputStream+YMCategory.m */; };
+		15CE62ABB39B6A4F580A52652ADEC159 /* YMURLSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 6487390589A2E66AE93472D70B58AF15 /* YMURLSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1727E1858C0B9DF363EF92ECFF125492 /* YMURLSessionTaskBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B597A6E2FE7D2D031249521C37A226A /* YMURLSessionTaskBehaviour.m */; };
+		1847DE85899F27EA70DEAD41B1481FBC /* YMMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFD9E5D8E042C53CF4F9E32F994DDEB /* YMMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B6D42D33C5C7A6CC8C0DC124A66471E /* multi.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA631A469946353D69C0EA7F1D19E33 /* multi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		219C7FF2AD567BABEAC8BDE972B22646 /* NSURLCache+YMCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE3E8DE6D5C7BD0DFA65578F3215147 /* NSURLCache+YMCategory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21EC775BB284E99F9D9376B149787D02 /* YMTaskRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = BC227AD9007E0FFBB3CDAC98143AFF6B /* YMTaskRegistry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		283D3E19F40931F49013E7C6F1AD9F25 /* YMURLSessionTaskBody.h in Headers */ = {isa = PBXBuildFile; fileRef = A1140422EAF193B8C876674467DAF20B /* YMURLSessionTaskBody.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A3A1010D6E9D4ABA52750C5C8BDAF4B /* Pods-Reproduce_Bad_Network-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4FF2C626844F0FDB04729CEFBFF239 /* Pods-Reproduce_Bad_Network-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E2F7F9DDFF15DCB721F8D73CB655683 /* NSURLRequest+YMCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F965C158BD04D234BE637AD39444858 /* NSURLRequest+YMCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EE6CE417AA6D6CD623B0F76AFABEBCE /* Pods-Reproduce_Bad_Network-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B0A6EF201C301231D177DCF1ED090 /* Pods-Reproduce_Bad_Network-dummy.m */; };
+		34F17C1495243E4DA777E5392798CCAC /* typecheck-gcc.h in Headers */ = {isa = PBXBuildFile; fileRef = 809F6B7612609F061B5128E03D248955 /* typecheck-gcc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C1072E90FB61853703384F91FF653B6 /* YMURLSessionTaskBodySource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C9ABC0792784CF471B5D57D92847E /* YMURLSessionTaskBodySource.m */; };
+		3E1635A570E218E127B349AA84119DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3F79119BACA380C06DC6C534642E934E /* YMURLSessionAuthenticationChallengeSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CFC33C685E79323EBC6E3E1A4D069A /* YMURLSessionAuthenticationChallengeSender.m */; };
+		4207D1FC94740172FEE9C1913C1B0D9B /* NSArray+YMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D89074BEBD51EB7E15AF407CAB5C9396 /* NSArray+YMCategory.m */; };
+		4555BD761E070BA3EAF1818F064AF9E1 /* NSURLRequest+YMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 51014EC4888CE94445F601756AED00EF /* NSURLRequest+YMCategory.m */; };
+		46B1A0A37582EA026A8C48E6AB58C975 /* YMURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A503CE23BFCB1F83B11FD10A19FDB /* YMURLSessionConfiguration.m */; };
+		4B3D4FB6912904FE16475FF14E21EF25 /* YMTransferState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B777FF3F52563F2894C11E3BC6706C0 /* YMTransferState.m */; };
+		4F218475C033F466B7ACC88E5004DD77 /* YMTaskRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5706EBE73F6F41FCC9528A10EC1F3 /* YMTaskRegistry.m */; };
+		5E5A412086A81F0323B62B5046EF0736 /* YMURLSessionAuthenticationChallengeSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB8EB5E9E04B30F9059CFCA3069C704 /* YMURLSessionAuthenticationChallengeSender.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63EAB57B7904EFCC7F7AA55AE38DE5B1 /* YMHTTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 978A38583222DC09C784734DF374A2D1 /* YMHTTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6453110629A63DD019104E8BA50E9C3E /* YMURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6970D31A75A2313BDBBF4DD93A3044 /* YMURLSession.m */; };
+		66E7A6076045F3787E97A3BE8E63F02B /* YMURLSessionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 825397349A944F0F13D2F7BC7DBA09A3 /* YMURLSessionTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674ACE2892C794FD70F3BA17F79A56BB /* urlapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F3CBB04CABA84129E3D7AC295C471D6 /* urlapi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		69A831315C2D9356EB83C7D8947F6B1B /* system.h in Headers */ = {isa = PBXBuildFile; fileRef = F1EC94BBFE9C4B2BC63678ACC9D2A542 /* system.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6E63E8D205CD41B7D66A1AE7D2C41BD9 /* YMHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B221C2A051E7B341C7A4A37689DF41 /* YMHTTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		748496AB5D700002F2D80D7F3E74A661 /* YMMultiHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 415F6294DCD13C56026D9790823D614D /* YMMultiHandle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8251DD25F51340182590051A695012B9 /* YMURLSessionTaskBehaviour.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8794AF0E33AA264ACC96B4555E468A /* YMURLSessionTaskBehaviour.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87CB31D532F7B4566DB3430779AC7C65 /* YMURLSessionTaskBodySource.h in Headers */ = {isa = PBXBuildFile; fileRef = B233D5D8964A175FC195926F85D170DA /* YMURLSessionTaskBodySource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DC4349B2724B02D4546C506CCA2C54F /* stdcheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA013AA8B751A0C9689B936AC7E929A /* stdcheaders.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7A179CBEFF9CD0E56D1A847545ED56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		951AA15C67E8EC55F4DF6C85CFA6B41B /* YMTimeoutSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D843FDCC68EF7BBEAA800B68391787 /* YMTimeoutSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		970CA3E4E613CF5568816F813F370943 /* YMURLSessionTaskBody.m in Sources */ = {isa = PBXBuildFile; fileRef = FC80BE14A3C80D1A0676EC288A88666A /* YMURLSessionTaskBody.m */; };
+		A146D48DD12BFF726A323D61488B42F4 /* YMURLCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CADB78CBA0DD7131E58C0225404F0BE /* YMURLCacheHelper.m */; };
+		A741A1D55BE5AC43B1E03F65725044D9 /* NSArray+YMCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D73D8B17D3BFE89066ABF42EDCF2E3C /* NSArray+YMCategory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8F8791E22456CD93B0AFC0606411899 /* YMURLSessionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA1DF08638B2389B937333A3C8A79B /* YMURLSessionTask.m */; };
+		B0D9A1072889C01106628FF277FC5A55 /* NSURLCache+YMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5594641F8DDF32F3FC7C5B252167A6 /* NSURLCache+YMCategory.m */; };
+		B43FE400C7FA7A06CE296ACADD16FEB9 /* mprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = F76A2CCA7E7BABFB25AA3ECE9AC92708 /* mprintf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C28B80E849BA2489A5452D9C80EF7EDD /* curl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBF3ECD0B4CF1833AA190D7A6E0F261 /* curl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C568CB4662EFA4AFD3B22B395DE4C8C7 /* YMTransferState.h in Headers */ = {isa = PBXBuildFile; fileRef = 959EA100EF248E7715B5E78579A28A4B /* YMTransferState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C80831E71580B8EFF8A8ABD783B355AF /* NSInputStream+YMCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7341D33C656DF00104BB431E4290BE62 /* NSInputStream+YMCategory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA60D6976251EF5F00E038CA01E6B135 /* YMURLCacheHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E65DA53001EF01F9B68F6500B8FFDB /* YMURLCacheHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0363C1708610C02E1C04A672989CE7D /* curlver.h in Headers */ = {isa = PBXBuildFile; fileRef = 8373A9598C013E4622D295A9664B99E0 /* curlver.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E7DEE3C18D80A963F7D43A936380D5DF /* YMHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0B91274832B71B672AB1EA9319AFF /* YMHTTP-dummy.m */; };
+		EB6E28C12FCA41C8D5657AF78011C954 /* easy.h in Headers */ = {isa = PBXBuildFile; fileRef = D66D4BB2D90E224176C70777830D8C4F /* easy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EBA238332B084E1FDE7DD31F84F05395 /* YMMultiHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C137E0BE13602A0E756123E132018FB6 /* YMMultiHandle.m */; };
+		EBC3D9F92E6945B10BD7B5F11349114F /* YMEasyHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 906CEB8D3CDD77FBDE66C50181B9C479 /* YMEasyHandle.m */; };
+		EE188DA07C3839FE866B5B28C770A8E1 /* YMURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B77A7154F5BDBD9020E4E88AF084B64 /* YMURLSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9E29CC9F23ECD99A73DF275419F8D3F /* YMTimeoutSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D149665E5EB16E2B9392DD08699C6146 /* YMTimeoutSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1F794FB182A4A1609C27BCD9F64E06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEB74E093D84E7A9EF076EBDE55F01CC;
+			remoteInfo = YMHTTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022B9E1AF63F4294476574B992C25097 /* YMURLSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionConfiguration.h; path = YMHTTP/YMURLSessionConfiguration.h; sourceTree = "<group>"; };
+		0B777FF3F52563F2894C11E3BC6706C0 /* YMTransferState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMTransferState.m; path = YMHTTP/core/YMTransferState.m; sourceTree = "<group>"; };
+		0D5C9ABC0792784CF471B5D57D92847E /* YMURLSessionTaskBodySource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionTaskBodySource.m; path = YMHTTP/core/YMURLSessionTaskBodySource.m; sourceTree = "<group>"; };
+		0E4B0A6EF201C301231D177DCF1ED090 /* Pods-Reproduce_Bad_Network-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reproduce_Bad_Network-dummy.m"; sourceTree = "<group>"; };
+		0E691D29D492F19303D53E21D7E72478 /* YMHTTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YMHTTP.modulemap; sourceTree = "<group>"; };
+		1CADB78CBA0DD7131E58C0225404F0BE /* YMURLCacheHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLCacheHelper.m; path = YMHTTP/core/YMURLCacheHelper.m; sourceTree = "<group>"; };
+		1F965C158BD04D234BE637AD39444858 /* NSURLRequest+YMCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+YMCategory.h"; path = "YMHTTP/NSURLRequest+YMCategory.h"; sourceTree = "<group>"; };
+		2288B7254A0DA7A36D54FB3B45C204FF /* YMHTTP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YMHTTP-Info.plist"; sourceTree = "<group>"; };
+		28FA1DF08638B2389B937333A3C8A79B /* YMURLSessionTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionTask.m; path = YMHTTP/YMURLSessionTask.m; sourceTree = "<group>"; };
+		2D73D8B17D3BFE89066ABF42EDCF2E3C /* NSArray+YMCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YMCategory.h"; path = "YMHTTP/core/NSArray+YMCategory.h"; sourceTree = "<group>"; };
+		3B4FF2C626844F0FDB04729CEFBFF239 /* Pods-Reproduce_Bad_Network-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reproduce_Bad_Network-umbrella.h"; sourceTree = "<group>"; };
+		415F6294DCD13C56026D9790823D614D /* YMMultiHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMultiHandle.h; path = YMHTTP/curl/YMMultiHandle.h; sourceTree = "<group>"; };
+		4914F3EFA2F04CADCB8583874B1617EB /* Pods-Reproduce_Bad_Network */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Reproduce_Bad_Network"; path = Pods_Reproduce_Bad_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFD9E5D8E042C53CF4F9E32F994DDEB /* YMMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMacro.h; path = YMHTTP/curl/YMMacro.h; sourceTree = "<group>"; };
+		51014EC4888CE94445F601756AED00EF /* NSURLRequest+YMCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+YMCategory.m"; path = "YMHTTP/NSURLRequest+YMCategory.m"; sourceTree = "<group>"; };
+		5ADA04F29E1B044ABA047F0E1FD41B0E /* YMHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMHTTP-prefix.pch"; sourceTree = "<group>"; };
+		5CB8EB5E9E04B30F9059CFCA3069C704 /* YMURLSessionAuthenticationChallengeSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionAuthenticationChallengeSender.h; path = YMHTTP/core/YMURLSessionAuthenticationChallengeSender.h; sourceTree = "<group>"; };
+		60E67433344B67C4588EE225AB974E30 /* libcurl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcurl.a; path = YMHTTP/libcurl/libcurl.a; sourceTree = "<group>"; };
+		6487390589A2E66AE93472D70B58AF15 /* YMURLSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSession.h; path = YMHTTP/YMURLSession.h; sourceTree = "<group>"; };
+		70AB57068F89C987B76877AA54A8AAB9 /* Pods-Reproduce_Bad_Network-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reproduce_Bad_Network-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7341D33C656DF00104BB431E4290BE62 /* NSInputStream+YMCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInputStream+YMCategory.h"; path = "YMHTTP/core/NSInputStream+YMCategory.h"; sourceTree = "<group>"; };
+		7B597A6E2FE7D2D031249521C37A226A /* YMURLSessionTaskBehaviour.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionTaskBehaviour.m; path = YMHTTP/core/YMURLSessionTaskBehaviour.m; sourceTree = "<group>"; };
+		7B77A7154F5BDBD9020E4E88AF084B64 /* YMURLSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionDelegate.h; path = YMHTTP/YMURLSessionDelegate.h; sourceTree = "<group>"; };
+		7CBF3ECD0B4CF1833AA190D7A6E0F261 /* curl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curl.h; path = YMHTTP/libcurl/curl.h; sourceTree = "<group>"; };
+		7CE3E8DE6D5C7BD0DFA65578F3215147 /* NSURLCache+YMCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLCache+YMCategory.h"; path = "YMHTTP/core/NSURLCache+YMCategory.h"; sourceTree = "<group>"; };
+		7DE5706EBE73F6F41FCC9528A10EC1F3 /* YMTaskRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMTaskRegistry.m; path = YMHTTP/core/YMTaskRegistry.m; sourceTree = "<group>"; };
+		7F3CBB04CABA84129E3D7AC295C471D6 /* urlapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = urlapi.h; path = YMHTTP/libcurl/urlapi.h; sourceTree = "<group>"; };
+		807A6B64A9D3FE21CE3AA6C3A14309ED /* Pods-Reproduce_Bad_Network-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reproduce_Bad_Network-acknowledgements.markdown"; sourceTree = "<group>"; };
+		809F6B7612609F061B5128E03D248955 /* typecheck-gcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "typecheck-gcc.h"; path = "YMHTTP/libcurl/typecheck-gcc.h"; sourceTree = "<group>"; };
+		81D843FDCC68EF7BBEAA800B68391787 /* YMTimeoutSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMTimeoutSource.h; path = YMHTTP/curl/YMTimeoutSource.h; sourceTree = "<group>"; };
+		825397349A944F0F13D2F7BC7DBA09A3 /* YMURLSessionTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionTask.h; path = YMHTTP/YMURLSessionTask.h; sourceTree = "<group>"; };
+		8373A9598C013E4622D295A9664B99E0 /* curlver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curlver.h; path = YMHTTP/libcurl/curlver.h; sourceTree = "<group>"; };
+		882A503CE23BFCB1F83B11FD10A19FDB /* YMURLSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionConfiguration.m; path = YMHTTP/YMURLSessionConfiguration.m; sourceTree = "<group>"; };
+		89E65DA53001EF01F9B68F6500B8FFDB /* YMURLCacheHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLCacheHelper.h; path = YMHTTP/core/YMURLCacheHelper.h; sourceTree = "<group>"; };
+		8B19CC6CEEEAC0F0B14FB0ABD1D6F1F3 /* Pods-Reproduce_Bad_Network-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reproduce_Bad_Network-acknowledgements.plist"; sourceTree = "<group>"; };
+		906CEB8D3CDD77FBDE66C50181B9C479 /* YMEasyHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMEasyHandle.m; path = YMHTTP/curl/YMEasyHandle.m; sourceTree = "<group>"; };
+		90E5F03D07D956DCF0FABAF47993D779 /* Pods-Reproduce_Bad_Network.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Reproduce_Bad_Network.modulemap"; sourceTree = "<group>"; };
+		92B221C2A051E7B341C7A4A37689DF41 /* YMHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMHTTP.h; path = YMHTTP/YMHTTP.h; sourceTree = "<group>"; };
+		959EA100EF248E7715B5E78579A28A4B /* YMTransferState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMTransferState.h; path = YMHTTP/core/YMTransferState.h; sourceTree = "<group>"; };
+		978A38583222DC09C784734DF374A2D1 /* YMHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMHTTP-umbrella.h"; sourceTree = "<group>"; };
+		99CFC33C685E79323EBC6E3E1A4D069A /* YMURLSessionAuthenticationChallengeSender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionAuthenticationChallengeSender.m; path = YMHTTP/core/YMURLSessionAuthenticationChallengeSender.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED0B91274832B71B672AB1EA9319AFF /* YMHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YMHTTP-dummy.m"; sourceTree = "<group>"; };
+		A1140422EAF193B8C876674467DAF20B /* YMURLSessionTaskBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionTaskBody.h; path = YMHTTP/core/YMURLSessionTaskBody.h; sourceTree = "<group>"; };
+		A9C74EE30C792B9611E05368406DE821 /* NSInputStream+YMCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInputStream+YMCategory.m"; path = "YMHTTP/core/NSInputStream+YMCategory.m"; sourceTree = "<group>"; };
+		AD8794AF0E33AA264ACC96B4555E468A /* YMURLSessionTaskBehaviour.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionTaskBehaviour.h; path = YMHTTP/core/YMURLSessionTaskBehaviour.h; sourceTree = "<group>"; };
+		AE6970D31A75A2313BDBBF4DD93A3044 /* YMURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSession.m; path = YMHTTP/YMURLSession.m; sourceTree = "<group>"; };
+		B023CAAD9181B6CE463627EC9905BF64 /* YMHTTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YMHTTP.debug.xcconfig; sourceTree = "<group>"; };
+		B233D5D8964A175FC195926F85D170DA /* YMURLSessionTaskBodySource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMURLSessionTaskBodySource.h; path = YMHTTP/core/YMURLSessionTaskBodySource.h; sourceTree = "<group>"; };
+		BC227AD9007E0FFBB3CDAC98143AFF6B /* YMTaskRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMTaskRegistry.h; path = YMHTTP/core/YMTaskRegistry.h; sourceTree = "<group>"; };
+		C137E0BE13602A0E756123E132018FB6 /* YMMultiHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMMultiHandle.m; path = YMHTTP/curl/YMMultiHandle.m; sourceTree = "<group>"; };
+		C42EDABFE49354313F0C0B4680F41237 /* YMHTTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YMHTTP.release.xcconfig; sourceTree = "<group>"; };
+		CFA100BAFB31187F96D93A07CE6EB7C4 /* YMEasyHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMEasyHandle.h; path = YMHTTP/curl/YMEasyHandle.h; sourceTree = "<group>"; };
+		D149665E5EB16E2B9392DD08699C6146 /* YMTimeoutSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMTimeoutSource.m; path = YMHTTP/curl/YMTimeoutSource.m; sourceTree = "<group>"; };
+		D1716234EA255DC9CD6E2DE298A3310F /* YMHTTP */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YMHTTP; path = YMHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66D4BB2D90E224176C70777830D8C4F /* easy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = easy.h; path = YMHTTP/libcurl/easy.h; sourceTree = "<group>"; };
+		D89074BEBD51EB7E15AF407CAB5C9396 /* NSArray+YMCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YMCategory.m"; path = "YMHTTP/core/NSArray+YMCategory.m"; sourceTree = "<group>"; };
+		D97AC23005F4ADAC77593C4AE66F07C7 /* Pods-Reproduce_Bad_Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reproduce_Bad_Network.release.xcconfig"; sourceTree = "<group>"; };
+		DBA631A469946353D69C0EA7F1D19E33 /* multi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = multi.h; path = YMHTTP/libcurl/multi.h; sourceTree = "<group>"; };
+		F1EC94BBFE9C4B2BC63678ACC9D2A542 /* system.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = system.h; path = YMHTTP/libcurl/system.h; sourceTree = "<group>"; };
+		F261F9CFF962D4BCF14402C17093B318 /* Pods-Reproduce_Bad_Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reproduce_Bad_Network.debug.xcconfig"; sourceTree = "<group>"; };
+		F76A2CCA7E7BABFB25AA3ECE9AC92708 /* mprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mprintf.h; path = YMHTTP/libcurl/mprintf.h; sourceTree = "<group>"; };
+		FC80BE14A3C80D1A0676EC288A88666A /* YMURLSessionTaskBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YMURLSessionTaskBody.m; path = YMHTTP/core/YMURLSessionTaskBody.m; sourceTree = "<group>"; };
+		FDA013AA8B751A0C9689B936AC7E929A /* stdcheaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stdcheaders.h; path = YMHTTP/libcurl/stdcheaders.h; sourceTree = "<group>"; };
+		FDB05E0D66E31C0CD8EE0B7914745F4F /* Pods-Reproduce_Bad_Network-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reproduce_Bad_Network-Info.plist"; sourceTree = "<group>"; };
+		FE5594641F8DDF32F3FC7C5B252167A6 /* NSURLCache+YMCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLCache+YMCategory.m"; path = "YMHTTP/core/NSURLCache+YMCategory.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C674C5CA7D11D750D645A74F7B2A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1635A570E218E127B349AA84119DE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3F0996BA03DB8C095C97CACFE3E4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7A179CBEFF9CD0E56D1A847545ED56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E140BC9C7E4E54896D468014FD62ADB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90BF677C3AEC5B2B96973DED1BBB353D /* YMHTTP */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E2057C73F82D9B8914D2A26772E91A6 /* Pods-Reproduce_Bad_Network */ = {
+			isa = PBXGroup;
+			children = (
+				90E5F03D07D956DCF0FABAF47993D779 /* Pods-Reproduce_Bad_Network.modulemap */,
+				807A6B64A9D3FE21CE3AA6C3A14309ED /* Pods-Reproduce_Bad_Network-acknowledgements.markdown */,
+				8B19CC6CEEEAC0F0B14FB0ABD1D6F1F3 /* Pods-Reproduce_Bad_Network-acknowledgements.plist */,
+				0E4B0A6EF201C301231D177DCF1ED090 /* Pods-Reproduce_Bad_Network-dummy.m */,
+				70AB57068F89C987B76877AA54A8AAB9 /* Pods-Reproduce_Bad_Network-frameworks.sh */,
+				FDB05E0D66E31C0CD8EE0B7914745F4F /* Pods-Reproduce_Bad_Network-Info.plist */,
+				3B4FF2C626844F0FDB04729CEFBFF239 /* Pods-Reproduce_Bad_Network-umbrella.h */,
+				F261F9CFF962D4BCF14402C17093B318 /* Pods-Reproduce_Bad_Network.debug.xcconfig */,
+				D97AC23005F4ADAC77593C4AE66F07C7 /* Pods-Reproduce_Bad_Network.release.xcconfig */,
+			);
+			name = "Pods-Reproduce_Bad_Network";
+			path = "Target Support Files/Pods-Reproduce_Bad_Network";
+			sourceTree = "<group>";
+		};
+		54B6D64E427165FB4AD057D19E1B9D49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E691D29D492F19303D53E21D7E72478 /* YMHTTP.modulemap */,
+				9ED0B91274832B71B672AB1EA9319AFF /* YMHTTP-dummy.m */,
+				2288B7254A0DA7A36D54FB3B45C204FF /* YMHTTP-Info.plist */,
+				5ADA04F29E1B044ABA047F0E1FD41B0E /* YMHTTP-prefix.pch */,
+				978A38583222DC09C784734DF374A2D1 /* YMHTTP-umbrella.h */,
+				B023CAAD9181B6CE463627EC9905BF64 /* YMHTTP.debug.xcconfig */,
+				C42EDABFE49354313F0C0B4680F41237 /* YMHTTP.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YMHTTP";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C7EDA599D36A0591B2864C9B88E8EC4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E2057C73F82D9B8914D2A26772E91A6 /* Pods-Reproduce_Bad_Network */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		90BF677C3AEC5B2B96973DED1BBB353D /* YMHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				2D73D8B17D3BFE89066ABF42EDCF2E3C /* NSArray+YMCategory.h */,
+				D89074BEBD51EB7E15AF407CAB5C9396 /* NSArray+YMCategory.m */,
+				7341D33C656DF00104BB431E4290BE62 /* NSInputStream+YMCategory.h */,
+				A9C74EE30C792B9611E05368406DE821 /* NSInputStream+YMCategory.m */,
+				7CE3E8DE6D5C7BD0DFA65578F3215147 /* NSURLCache+YMCategory.h */,
+				FE5594641F8DDF32F3FC7C5B252167A6 /* NSURLCache+YMCategory.m */,
+				1F965C158BD04D234BE637AD39444858 /* NSURLRequest+YMCategory.h */,
+				51014EC4888CE94445F601756AED00EF /* NSURLRequest+YMCategory.m */,
+				CFA100BAFB31187F96D93A07CE6EB7C4 /* YMEasyHandle.h */,
+				906CEB8D3CDD77FBDE66C50181B9C479 /* YMEasyHandle.m */,
+				92B221C2A051E7B341C7A4A37689DF41 /* YMHTTP.h */,
+				4EFD9E5D8E042C53CF4F9E32F994DDEB /* YMMacro.h */,
+				415F6294DCD13C56026D9790823D614D /* YMMultiHandle.h */,
+				C137E0BE13602A0E756123E132018FB6 /* YMMultiHandle.m */,
+				BC227AD9007E0FFBB3CDAC98143AFF6B /* YMTaskRegistry.h */,
+				7DE5706EBE73F6F41FCC9528A10EC1F3 /* YMTaskRegistry.m */,
+				81D843FDCC68EF7BBEAA800B68391787 /* YMTimeoutSource.h */,
+				D149665E5EB16E2B9392DD08699C6146 /* YMTimeoutSource.m */,
+				959EA100EF248E7715B5E78579A28A4B /* YMTransferState.h */,
+				0B777FF3F52563F2894C11E3BC6706C0 /* YMTransferState.m */,
+				89E65DA53001EF01F9B68F6500B8FFDB /* YMURLCacheHelper.h */,
+				1CADB78CBA0DD7131E58C0225404F0BE /* YMURLCacheHelper.m */,
+				6487390589A2E66AE93472D70B58AF15 /* YMURLSession.h */,
+				AE6970D31A75A2313BDBBF4DD93A3044 /* YMURLSession.m */,
+				5CB8EB5E9E04B30F9059CFCA3069C704 /* YMURLSessionAuthenticationChallengeSender.h */,
+				99CFC33C685E79323EBC6E3E1A4D069A /* YMURLSessionAuthenticationChallengeSender.m */,
+				022B9E1AF63F4294476574B992C25097 /* YMURLSessionConfiguration.h */,
+				882A503CE23BFCB1F83B11FD10A19FDB /* YMURLSessionConfiguration.m */,
+				7B77A7154F5BDBD9020E4E88AF084B64 /* YMURLSessionDelegate.h */,
+				825397349A944F0F13D2F7BC7DBA09A3 /* YMURLSessionTask.h */,
+				28FA1DF08638B2389B937333A3C8A79B /* YMURLSessionTask.m */,
+				AD8794AF0E33AA264ACC96B4555E468A /* YMURLSessionTaskBehaviour.h */,
+				7B597A6E2FE7D2D031249521C37A226A /* YMURLSessionTaskBehaviour.m */,
+				A1140422EAF193B8C876674467DAF20B /* YMURLSessionTaskBody.h */,
+				FC80BE14A3C80D1A0676EC288A88666A /* YMURLSessionTaskBody.m */,
+				B233D5D8964A175FC195926F85D170DA /* YMURLSessionTaskBodySource.h */,
+				0D5C9ABC0792784CF471B5D57D92847E /* YMURLSessionTaskBodySource.m */,
+				A3738D2D737F782F4229563D383D9AA5 /* libcurl */,
+				54B6D64E427165FB4AD057D19E1B9D49 /* Support Files */,
+			);
+			name = YMHTTP;
+			path = YMHTTP;
+			sourceTree = "<group>";
+		};
+		9E45567F5C921167B21235ED47D3D510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4914F3EFA2F04CADCB8583874B1617EB /* Pods-Reproduce_Bad_Network */,
+				D1716234EA255DC9CD6E2DE298A3310F /* YMHTTP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3738D2D737F782F4229563D383D9AA5 /* libcurl */ = {
+			isa = PBXGroup;
+			children = (
+				7CBF3ECD0B4CF1833AA190D7A6E0F261 /* curl.h */,
+				8373A9598C013E4622D295A9664B99E0 /* curlver.h */,
+				D66D4BB2D90E224176C70777830D8C4F /* easy.h */,
+				F76A2CCA7E7BABFB25AA3ECE9AC92708 /* mprintf.h */,
+				DBA631A469946353D69C0EA7F1D19E33 /* multi.h */,
+				FDA013AA8B751A0C9689B936AC7E929A /* stdcheaders.h */,
+				F1EC94BBFE9C4B2BC63678ACC9D2A542 /* system.h */,
+				809F6B7612609F061B5128E03D248955 /* typecheck-gcc.h */,
+				7F3CBB04CABA84129E3D7AC295C471D6 /* urlapi.h */,
+				B0097FB162447C228E4BC2A9A7A3579D /* Frameworks */,
+			);
+			name = libcurl;
+			sourceTree = "<group>";
+		};
+		B0097FB162447C228E4BC2A9A7A3579D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60E67433344B67C4588EE225AB974E30 /* libcurl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0E140BC9C7E4E54896D468014FD62ADB /* Pods */,
+				9E45567F5C921167B21235ED47D3D510 /* Products */,
+				7C7EDA599D36A0591B2864C9B88E8EC4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7A9E5749B097E7D03A7B8F2C2D772F80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B80E849BA2489A5452D9C80EF7EDD /* curl.h in Headers */,
+				E0363C1708610C02E1C04A672989CE7D /* curlver.h in Headers */,
+				EB6E28C12FCA41C8D5657AF78011C954 /* easy.h in Headers */,
+				B43FE400C7FA7A06CE296ACADD16FEB9 /* mprintf.h in Headers */,
+				1B6D42D33C5C7A6CC8C0DC124A66471E /* multi.h in Headers */,
+				A741A1D55BE5AC43B1E03F65725044D9 /* NSArray+YMCategory.h in Headers */,
+				C80831E71580B8EFF8A8ABD783B355AF /* NSInputStream+YMCategory.h in Headers */,
+				219C7FF2AD567BABEAC8BDE972B22646 /* NSURLCache+YMCategory.h in Headers */,
+				2E2F7F9DDFF15DCB721F8D73CB655683 /* NSURLRequest+YMCategory.h in Headers */,
+				8DC4349B2724B02D4546C506CCA2C54F /* stdcheaders.h in Headers */,
+				69A831315C2D9356EB83C7D8947F6B1B /* system.h in Headers */,
+				34F17C1495243E4DA777E5392798CCAC /* typecheck-gcc.h in Headers */,
+				674ACE2892C794FD70F3BA17F79A56BB /* urlapi.h in Headers */,
+				0925503D71D84EE2ADCAD627070D803C /* YMEasyHandle.h in Headers */,
+				6E63E8D205CD41B7D66A1AE7D2C41BD9 /* YMHTTP.h in Headers */,
+				63EAB57B7904EFCC7F7AA55AE38DE5B1 /* YMHTTP-umbrella.h in Headers */,
+				1847DE85899F27EA70DEAD41B1481FBC /* YMMacro.h in Headers */,
+				748496AB5D700002F2D80D7F3E74A661 /* YMMultiHandle.h in Headers */,
+				21EC775BB284E99F9D9376B149787D02 /* YMTaskRegistry.h in Headers */,
+				951AA15C67E8EC55F4DF6C85CFA6B41B /* YMTimeoutSource.h in Headers */,
+				C568CB4662EFA4AFD3B22B395DE4C8C7 /* YMTransferState.h in Headers */,
+				CA60D6976251EF5F00E038CA01E6B135 /* YMURLCacheHelper.h in Headers */,
+				15CE62ABB39B6A4F580A52652ADEC159 /* YMURLSession.h in Headers */,
+				5E5A412086A81F0323B62B5046EF0736 /* YMURLSessionAuthenticationChallengeSender.h in Headers */,
+				08D7EF8CEB275B9569C5D76A7F503F19 /* YMURLSessionConfiguration.h in Headers */,
+				EE188DA07C3839FE866B5B28C770A8E1 /* YMURLSessionDelegate.h in Headers */,
+				66E7A6076045F3787E97A3BE8E63F02B /* YMURLSessionTask.h in Headers */,
+				8251DD25F51340182590051A695012B9 /* YMURLSessionTaskBehaviour.h in Headers */,
+				283D3E19F40931F49013E7C6F1AD9F25 /* YMURLSessionTaskBody.h in Headers */,
+				87CB31D532F7B4566DB3430779AC7C65 /* YMURLSessionTaskBodySource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8B41FD06D112AD0B59471F6A383FF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3A1010D6E9D4ABA52750C5C8BDAF4B /* Pods-Reproduce_Bad_Network-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AEB74E093D84E7A9EF076EBDE55F01CC /* YMHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F863B1F070B525DAEA779D34F64BA37B /* Build configuration list for PBXNativeTarget "YMHTTP" */;
+			buildPhases = (
+				7A9E5749B097E7D03A7B8F2C2D772F80 /* Headers */,
+				C44121A74DEE150DCCD262D39E8CE448 /* Sources */,
+				C4C674C5CA7D11D750D645A74F7B2A1B /* Frameworks */,
+				E26020D89B58736FF753F81B17C94A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMHTTP;
+			productName = YMHTTP;
+			productReference = D1716234EA255DC9CD6E2DE298A3310F /* YMHTTP */;
+			productType = "com.apple.product-type.framework";
+		};
+		D94D622BAF7A803830DADA5FD9B4B39A /* Pods-Reproduce_Bad_Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA911A5A7A04DE60653ABB23A507018F /* Build configuration list for PBXNativeTarget "Pods-Reproduce_Bad_Network" */;
+			buildPhases = (
+				ED8B41FD06D112AD0B59471F6A383FF6 /* Headers */,
+				4A4348A34E7EE8054CAE1FF656EED3E6 /* Sources */,
+				FA3F0996BA03DB8C095C97CACFE3E4BB /* Frameworks */,
+				E4D96B86DEC5FE475857E8FE25CA0FC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522707D328993F466B4A591AE72081CE /* PBXTargetDependency */,
+			);
+			name = "Pods-Reproduce_Bad_Network";
+			productName = Pods_Reproduce_Bad_Network;
+			productReference = 4914F3EFA2F04CADCB8583874B1617EB /* Pods-Reproduce_Bad_Network */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9E45567F5C921167B21235ED47D3D510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D94D622BAF7A803830DADA5FD9B4B39A /* Pods-Reproduce_Bad_Network */,
+				AEB74E093D84E7A9EF076EBDE55F01CC /* YMHTTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26020D89B58736FF753F81B17C94A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D96B86DEC5FE475857E8FE25CA0FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A4348A34E7EE8054CAE1FF656EED3E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE6CE417AA6D6CD623B0F76AFABEBCE /* Pods-Reproduce_Bad_Network-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C44121A74DEE150DCCD262D39E8CE448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4207D1FC94740172FEE9C1913C1B0D9B /* NSArray+YMCategory.m in Sources */,
+				151C62105E96DD5B0D786D9758DF76DE /* NSInputStream+YMCategory.m in Sources */,
+				B0D9A1072889C01106628FF277FC5A55 /* NSURLCache+YMCategory.m in Sources */,
+				4555BD761E070BA3EAF1818F064AF9E1 /* NSURLRequest+YMCategory.m in Sources */,
+				EBC3D9F92E6945B10BD7B5F11349114F /* YMEasyHandle.m in Sources */,
+				E7DEE3C18D80A963F7D43A936380D5DF /* YMHTTP-dummy.m in Sources */,
+				EBA238332B084E1FDE7DD31F84F05395 /* YMMultiHandle.m in Sources */,
+				4F218475C033F466B7ACC88E5004DD77 /* YMTaskRegistry.m in Sources */,
+				F9E29CC9F23ECD99A73DF275419F8D3F /* YMTimeoutSource.m in Sources */,
+				4B3D4FB6912904FE16475FF14E21EF25 /* YMTransferState.m in Sources */,
+				A146D48DD12BFF726A323D61488B42F4 /* YMURLCacheHelper.m in Sources */,
+				6453110629A63DD019104E8BA50E9C3E /* YMURLSession.m in Sources */,
+				3F79119BACA380C06DC6C534642E934E /* YMURLSessionAuthenticationChallengeSender.m in Sources */,
+				46B1A0A37582EA026A8C48E6AB58C975 /* YMURLSessionConfiguration.m in Sources */,
+				A8F8791E22456CD93B0AFC0606411899 /* YMURLSessionTask.m in Sources */,
+				1727E1858C0B9DF363EF92ECFF125492 /* YMURLSessionTaskBehaviour.m in Sources */,
+				970CA3E4E613CF5568816F813F370943 /* YMURLSessionTaskBody.m in Sources */,
+				3C1072E90FB61853703384F91FF653B6 /* YMURLSessionTaskBodySource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		522707D328993F466B4A591AE72081CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YMHTTP;
+			target = AEB74E093D84E7A9EF076EBDE55F01CC /* YMHTTP */;
+			targetProxy = A1F794FB182A4A1609C27BCD9F64E06F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		48BE82065B55F84EDCD9C2D30EE832B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F261F9CFF962D4BCF14402C17093B318 /* Pods-Reproduce_Bad_Network.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D55CB8F60CE9D857339933132F91C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42EDABFE49354313F0C0B4680F41237 /* YMHTTP.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YMHTTP/YMHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YMHTTP/YMHTTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YMHTTP/YMHTTP.modulemap";
+				PRODUCT_MODULE_NAME = YMHTTP;
+				PRODUCT_NAME = YMHTTP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DC94906D745707DE64E96FCEFAE04C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B023CAAD9181B6CE463627EC9905BF64 /* YMHTTP.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YMHTTP/YMHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YMHTTP/YMHTTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YMHTTP/YMHTTP.modulemap";
+				PRODUCT_MODULE_NAME = YMHTTP;
+				PRODUCT_NAME = YMHTTP;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC9F187EA2ED783FB9F812F5A9764E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97AC23005F4ADAC77593C4AE66F07C7 /* Pods-Reproduce_Bad_Network.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Reproduce_Bad_Network/Pods-Reproduce_Bad_Network.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
+				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F863B1F070B525DAEA779D34F64BA37B /* Build configuration list for PBXNativeTarget "YMHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC94906D745707DE64E96FCEFAE04C6 /* Debug */,
+				6D55CB8F60CE9D857339933132F91C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA911A5A7A04DE60653ABB23A507018F /* Build configuration list for PBXNativeTarget "Pods-Reproduce_Bad_Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BE82065B55F84EDCD9C2D30EE832B4 /* Debug */,
+				CC9F187EA2ED783FB9F812F5A9764E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
